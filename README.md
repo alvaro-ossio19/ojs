@@ -103,9 +103,11 @@ Actualizamos las dependencias y compilamos la aplicación JavaScript:
     $ npm install
     $ npm run build
 
-Si se debe actualizar la base de datos:
+Si se debe actualizar la base de datos, en el archivo config.ing.php cambiar installed = On a Off y ejecutar:
 
     $ php tools/upgrade.php upgrade
+
+Luego volver a cambiar installed = Off a On.
 
 ## Upgrade
 
@@ -133,13 +135,17 @@ cp config.TEMPLATE.inc.php config.inc.php
 chmod 777 config.inc.php
 Ahora accedemos al ojs desde el navegador y realizamos la instalación.
 
-Por último ejecutamos los siguientes queries en la db:
+Ejecutamos los siguientes queries en la db para el plugin LDAP UPCH:
 
 UPDATE users SET auth_id=NULL WHERE user_id=1;
 INSERT INTO auth_sources(auth_id,title,plugin,auth_default) VALUES(1,'LDAP UPCH','ldap-upch',1);
+
+Por último, las nuevas columnas para SIDISI:
+
 alter table authors add column prot_participant_id bigint(20) null;
 alter table authors add column repository_role_id tinyint null;
 alter table authors add column sidisi_role_label varchar(128) null;
+
 Con eso nos aseguramos que el usuario admin no iniciará sesión con LDAP.
 
 Finalmente, si el servidor ya cuenta con un certificado digital SSL, entrar al archivo config.inc.php y cambiar las siguientes ; Force SSL connections site-wide force_ssl = On
