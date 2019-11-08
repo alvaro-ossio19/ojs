@@ -33,6 +33,120 @@ If your PHP version supports built-in development server :
 
 See [Wiki][wiki-dev] for more complete development guide.
 
+## PKP dev
+
+Documentación de desarrollo:
+
+    https://docs.pkp.sfu.ca/dev/documentation/en/getting-started
+
+## Git Repository Fork: Vincular proyecto con repositorio padre
+
+Verificar los repositorios remotos del proyecto:
+
+    $ git remote -v
+    > origin  https://github.com/alvaro-ossio19/ojs.git (fetch)
+    > origin  https://github.com/alvaro-ossio19/ojs.git (push)
+
+Si no existe el repositorio original, hacer lo siguiente:
+
+    $ git remote add upstream https://github.com/pkp/ojs.git
+
+Volvemos a verificar los repositorios remotos:
+
+    $ git remote -v
+    > origin        https://github.com/alvaro-ossio19/ojs.git (fetch)
+    > origin        https://github.com/alvaro-ossio19/ojs.git (push)
+    > upstream      https://github.com/pkp/ojs.git (fetch)
+    > upstream      https://github.com/pkp/ojs.git (push)
+
+Hacemos lo mismo para las librerías pkp y ui-library:
+
+    $ cd lib/pkp
+    $ git remote add upstream git@github.com:pkp/pkp-lib.git
+    $ cd ../ui-library
+    $ git remote add upstream git@github.com:pkp/ui-library.git
+
+## Git Repository Fork: Sincronizar actualizaciones del repositorio padre
+
+Vamos a la rama stable-3_1_2 (bifurcación):
+
+    $ git remote update
+    $ git fetch
+    $ git checkout --track origin/stable-3_1_2
+
+Para fusionar los cambios del repositorio padre desde upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (bifurcación):
+
+    $ git pull upstream stable-3_1_2
+    $ git push
+
+Para actualizar la librería pkp:
+
+    $ cd lib/pkp
+    $ git checkout master
+    $ git pull upstream master
+    $ git push
+
+Para actualizar la librería ui-library:
+
+    $ cd ../ui-library
+    $ git checkout master
+    $ git pull upstream master
+    $ git push
+
+Después de actualizar las librerías, los sincronizamos con OJS a su versión adecuada:
+
+    $ git submodule update --init --recursive
+
+Actualizamos las dependencias y compilamos la aplicación JavaScript:
+
+    $ composer --working-dir=lib/pkp update
+    $ npm install
+    $ npm run build
+
+Si se debe actualizar la base de datos:
+
+    $ php tools/upgrade.php upgrade
+
+## Upgrade
+
+Para actualizar la aplicacion OJS desde una base de datos existente:
+
+https://pkp.sfu.ca/ojs/UPGRADE
+OJS: Revisión Académica
+Esta versión OJS está personalizada para SIDISI. Se usará para las revisiones académicas de proyectos por parte de las Unidades de Gestión.
+
+Después de realizar la clonación del repositorio, se debe dar permisos de escritura a las carpetas cache/ y public/
+
+chmod -R 777 cache/
+chmod -R 777 public/
+Se debe evitar el borrado de los archivos .gitignore:
+
+chmod -w cache/t_cache/.gitignore
+chmod -w cache/t_compile/.gitignore
+chmod -w cache/t_config/.gitignore
+chmod -w cache/_db/.gitignore
+chmod -w cache/.gitignore
+chmod -w public/.gitignore
+Creamos el archivo de configuración y damos permiso de escritura:
+
+cp config.TEMPLATE.inc.php config.inc.php
+chmod 777 config.inc.php
+Ahora accedemos al ojs desde el navegador y realizamos la instalación.
+
+Por último ejecutamos los siguientes queries en la db:
+
+UPDATE users SET auth_id=NULL WHERE user_id=1;
+INSERT INTO auth_sources(auth_id,title,plugin,auth_default) VALUES(1,'LDAP UPCH','ldap-upch',1);
+alter table authors add column prot_participant_id bigint(20) null;
+alter table authors add column repository_role_id tinyint null;
+alter table authors add column sidisi_role_label varchar(128) null;
+Con eso nos aseguramos que el usuario admin no iniciará sesión con LDAP.
+
+Finalmente, si el servidor ya cuenta con un certificado digital SSL, entrar al archivo config.inc.php y cambiar las siguientes ; Force SSL connections site-wide force_ssl = On
+
+; Force SSL connections for login only
+force_login_ssl = On
+
 ## Running Tests
 
 We recommend using [Travis](https://travis-ci.org/) for continuous-integration
