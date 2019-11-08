@@ -113,45 +113,52 @@ Luego volver a cambiar installed = Off a On.
 
 Para actualizar la aplicacion OJS desde una base de datos existente:
 
-https://pkp.sfu.ca/ojs/UPGRADE
-OJS: Revisión Académica
+    https://pkp.sfu.ca/ojs/UPGRADE
+
+## OJS: Revisión Académica
+
 Esta versión OJS está personalizada para SIDISI. Se usará para las revisiones académicas de proyectos por parte de las Unidades de Gestión.
 
 Después de realizar la clonación del repositorio, se debe dar permisos de escritura a las carpetas cache/ y public/
 
-chmod -R 777 cache/
-chmod -R 777 public/
+    chmod -R 777 cache/
+    chmod -R 777 public/
+
 Se debe evitar el borrado de los archivos .gitignore:
 
-chmod -w cache/t_cache/.gitignore
-chmod -w cache/t_compile/.gitignore
-chmod -w cache/t_config/.gitignore
-chmod -w cache/_db/.gitignore
-chmod -w cache/.gitignore
-chmod -w public/.gitignore
+    chmod -w cache/t_cache/.gitignore
+    chmod -w cache/t_compile/.gitignore
+    chmod -w cache/t_config/.gitignore
+    chmod -w cache/_db/.gitignore
+    chmod -w cache/.gitignore
+    chmod -w public/.gitignore
+
 Creamos el archivo de configuración y damos permiso de escritura:
 
-cp config.TEMPLATE.inc.php config.inc.php
-chmod 777 config.inc.php
+    cp config.TEMPLATE.inc.php config.inc.php
+    chmod 777 config.inc.php
+
 Ahora accedemos al ojs desde el navegador y realizamos la instalación.
 
 Ejecutamos los siguientes queries en la db para el plugin LDAP UPCH:
 
-UPDATE users SET auth_id=NULL WHERE user_id=1;
-INSERT INTO auth_sources(auth_id,title,plugin,auth_default) VALUES(1,'LDAP UPCH','ldap-upch',1);
+    UPDATE users SET auth_id=NULL WHERE user_id=1;
+    INSERT INTO auth_sources(auth_id,title,plugin,auth_default) VALUES(1,'LDAP UPCH','ldap-upch',1);
 
 Por último, las nuevas columnas para SIDISI:
 
-alter table authors add column prot_participant_id bigint(20) null;
-alter table authors add column repository_role_id tinyint null;
-alter table authors add column sidisi_role_label varchar(128) null;
+    alter table authors add column prot_participant_id bigint(20) null;
+    alter table authors add column repository_role_id tinyint null;
+    alter table authors add column sidisi_role_label varchar(128) null;
 
 Con eso nos aseguramos que el usuario admin no iniciará sesión con LDAP.
 
-Finalmente, si el servidor ya cuenta con un certificado digital SSL, entrar al archivo config.inc.php y cambiar las siguientes ; Force SSL connections site-wide force_ssl = On
+Finalmente, si el servidor ya cuenta con un certificado digital SSL, entrar al archivo config.inc.php y cambiar las siguientes ; Force SSL connections site-wide 
 
-; Force SSL connections for login only
-force_login_ssl = On
+    force_ssl = On
+
+    ; Force SSL connections for login only
+    force_login_ssl = On
 
 ## Running Tests
 
