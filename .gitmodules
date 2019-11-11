@@ -47,3 +47,6 @@
 [submodule "plugins/reports/counter/classes/COUNTER"]
 	path = plugins/reports/counter/classes/COUNTER
 	url = https://github.com/ulsdevteam/COUNTER.git
+[submodule "plugins/auth/ldap-upch"]
+	path = plugins/auth/ldap-upch
+	url = https://github.com/alvaro-ossio19/ojs-ldap.git
