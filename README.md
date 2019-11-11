@@ -82,15 +82,19 @@ Para fusionar los cambios del repositorio padre desde upstream/stable-3_1_2 con 
 Para actualizar la librería pkp:
 
     $ cd lib/pkp
-    $ git checkout master
-    $ git pull upstream master
+    $ git remote update
+    $ git fetch
+    $ git checkout stable-3_1_2
+    $ git pull upstream stable-3_1_2
     $ git push
 
 Para actualizar la librería ui-library:
 
     $ cd ../ui-library
-    $ git checkout master
-    $ git pull upstream master
+    $ git remote update
+    $ git fetch
+    $ git checkout stable-3_1_2
+    $ git pull upstream stable-3_1_2
     $ git push
 
 Después de actualizar las librerías, los sincronizamos con OJS a su versión adecuada:
