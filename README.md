@@ -164,6 +164,37 @@ Finalmente, si el servidor ya cuenta con un certificado digital SSL, entrar al a
     ; Force SSL connections for login only
     force_login_ssl = On
 
+## Agregar submódulos GIT
+
+Para instalar nuevos repositorios como parte de OJS, se deben agregar como submódulos.
+Tomamos como ejemplo el repositorio del plugin LDAP UPCH y lo agregamos de la siguiente manera en la raíz de OJS:
+
+    $ git submodule add https://github.com/alvaro-ossio19/ojs-ldap.git  plugins/auth/ldap-upch
+
+Esto habrá agregado al plugin como submodulo en OJS en el archivo .gitmodules:
+
+    [submodule "plugins/auth/ldap-upch"]
+	path = plugins/auth/ldap-upch
+	url = https://github.com/alvaro-ossio19/ojs-ldap.git
+
+Luego ejecutar en terminal:
+
+    $ git submodule update --init --recursive
+
+## Cambiar rama de un submódulo GIT
+
+Si queremos utilizar una rama específica de un submódulo (en este ejemplo es v1.0), debemos hacer los siguiente:
+
+    $ cd submodule_directory
+    $ git checkout v1.0
+
+Luego volvemos a la raíz de OJS y ejecutamos:
+
+    $ git add submodule_directory
+    $ git commit -m "moved submodule to v1.0 branch"
+    $ git push
+
+
 ## Running Tests
 
 We recommend using [Travis](https://travis-ci.org/) for continuous-integration
