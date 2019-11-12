@@ -8,6 +8,37 @@ temp
 .buildpath
 .settings
 .DS_Store
+
+# Dependency directories
 node_modules
-js/build.js
-styles/build.css
+bower_components
+jspm_packages/
+
+# Include compiled files from vue
+# js/build.js
+# styles/build.css
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Carpeta de Netbeans
+nbproject/*
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
