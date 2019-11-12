@@ -50,3 +50,6 @@
 [submodule "plugins/auth/ldap-upch"]
 	path = plugins/auth/ldap-upch
 	url = https://github.com/alvaro-ossio19/ojs-ldap.git
+[submodule "plugins/orcidProfile"]
+	path = plugins/orcidProfile
+	url = https://github.com/alvaro-ossio19/orcidProfile.git
