@@ -64,6 +64,9 @@
 define('INDEX_FILE_LOCATION', __FILE__);
 $application = require('./lib/pkp/includes/bootstrap.inc.php');
 
+// variables globales de SIDISI
+define('UPCH_DISABLED_BY_SIDISI_MESSAGE', 'Método no permitido por SIDISI.');
+
 // Serve the request
 $application->execute();
 
