@@ -151,6 +151,7 @@ Ejecutamos los siguientes queries en la db para el plugin LDAP UPCH:
 
 Por último, las nuevas columnas para SIDISI:
 
+    alter table submissions add column sidisi_id bigint(20) null;
     alter table authors add column sidisi_participant_id bigint(20) null;
     alter table authors add column repository_role_id tinyint null;
     alter table authors add column sidisi_role_label varchar(128) null;
