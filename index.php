@@ -1,5 +1,15 @@
 <?php
 
+// [UPCH]
+// Variables globales para integracion con SIDISI.
+//
+define('UPCH_ROOT', dirname(__FILE__));
+define('UPCH_SETTING_AUTH_ID_DEFAULT', 0);
+define('UPCH_SETTING_AUTH_ID_LDAP', 1);
+define('UPCH_DISABLED_BY_SIDISI_MESSAGE', 'Método no permitido por SIDISI.');
+//
+// [/UPCH]
+
 /**
  * @mainpage OJS API Reference
  *
@@ -64,11 +74,6 @@
 define('INDEX_FILE_LOCATION', __FILE__);
 $application = require('./lib/pkp/includes/bootstrap.inc.php');
 
-// variables globales de SIDISI
-define('ROOT', dirname(__FILE__));
-define('UPCH_DISABLED_BY_SIDISI_MESSAGE', 'Método no permitido por SIDISI.');
-
 // Serve the request
 $application->execute();
-
 
