@@ -250,6 +250,18 @@
 				</div>
 			{/if}
 
+			{* [UPCH] *}
+			{if $article->getSidisiId()}
+				<div class="item issue">
+					<div class="label">
+						{translate key="submissions.sidisiId"}
+					</div>
+					<div class="value">
+						{$article->getSidisiId()}
+					</div>
+				</div>
+			{/if}
+
 			{if $article->getDatePublished()}
 				<div class="item published">
 					<div class="label">

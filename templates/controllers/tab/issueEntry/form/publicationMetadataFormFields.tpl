@@ -40,6 +40,13 @@
 			{/fbvFormSection}
 		{/fbvFormArea}
 
+		{* [UPCH] mostrar codigo SIDISI *}
+		{fbvFormArea title="submissions.sidisiId"}
+			{fbvFormSection}
+				{fbvElement type="text" id="sidisiId" label="submissions.sidisiId" value=$submission->getSidisiId() disabled=true inline=true size=$fbvStyles.size.MEDIUM}
+			{/fbvFormSection}
+		{/fbvFormArea}
+
 		{fbvFormArea id="pagesInformation" title="editor.issues.pages"}
 			{fbvFormSection for="customExtras"}
 				{fbvElement type="text" id="pages" label="editor.issues.pages" value=$submission->getPages() inline=true size=$fbvStyles.size.MEDIUM}

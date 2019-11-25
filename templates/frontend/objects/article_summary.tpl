@@ -31,7 +31,7 @@
 
 	<div class="title">
 		<a {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
-			{$article->getLocalizedTitle()|strip_unsafe_html}
+			{$article->getSidisiId()}: {$article->getLocalizedTitle()|strip_unsafe_html} {* [UPCH] codigo sidisi *}
 			{if $article->getLocalizedSubtitle()}
 				<span class="subtitle">
 					{$article->getLocalizedSubtitle()|escape}
