@@ -21,7 +21,7 @@
 	<!-- galleys grid -->
 
 	<!-- galley files grid -->
-	<message key="submission.submit.title">Enviar un artículo</message>
+	<message key="submission.submit.title">Enviar proyecto para su revisión académica.</message><!-- [UPCH] -->
 	<message key="submission.submit.userGroup">Enviar en mi rol como...</message>
 	<message key="submission.submit.userGroupDescription">Elija el rol bajo el cual envía este artículo.</message>
 	<message key="submission.upload.selectComponent">Seleccionar el componente del artículo</message>
@@ -31,7 +31,7 @@
 	<message key="submission.submit.newSubmissionSingle">Nuevo envío</message>
 	<message key="grid.action.workflow">Flujo de trabajo del envío</message>
 	<message key="submission.issueEntry">Metadatos</message>
-	<message key="submission.submit.whatNext.description">La revista ha sido notificada acerca de su envío y se le enviará un correo electrónico de confirmación para sus registros. Cuando el editor haya revisado el envío, se contactará con usted.</message>
+	<!--[UPCH]--><message key="submission.submit.whatNext.description">{$contextName} ha sido notificada acerca de su envío y se le enviará un correo electrónico de confirmación para sus registros. Cuando el editor haya revisado el envío, se contactará con usted.</message>
 	<message key="grid.action.galleyInIssueEntry">La galerada aparece en la entrada del número</message>
 	<message key="grid.action.issueEntry">Ver los metadatos de este envío</message>
 	<message key="submission.issueEntry.modalTitle">Metadatos de envío y publicación</message>
@@ -52,7 +52,7 @@
 	<message key="submission.submit.titleAndSummary">Título y resumen</message>
 	<message key="submission.submit.upload.description">Cargue los archivos asociados con este envío, incluyendo artículo, multimedia, conjuntos de datos, material gráfico, etc.</message>
 	<message key="submission.pageProofs">Corrección de pruebas</message>
-	<message key="submission.confirmSubmit">¿Está seguro de que desea enviar este artículo a la revista?</message>
+	<!--[UPCH]--><message key="submission.confirmSubmit">¿Está seguro de que desea enviar este artículo a la Unidad de Gestión?</message>
 	<message key="workflow.review.externalReview">Revisión</message>
 	<message key="editor.submission.decision.sendExternalReview">Enviar a revisión</message>
 	<message key="submission.event.issueMetadataUpdated">Los metadatos del envío han sido actualizados.</message>
