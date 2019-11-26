@@ -68,13 +68,20 @@ Hacemos lo mismo para las librerías pkp y ui-library:
 
 ## Git Repository Fork: Sincronizar actualizaciones del repositorio padre
 
-Vamos a la rama stable-3_1_2 (bifurcación):
+Vamos a la rama master:
 
+    $ git checkout master
     $ git remote update
-    $ git fetch
+    $ git fetch upstream
+
+Si se trajeron nuevos tags desde upstream, debemos subirlo a nuestro fork:
+
+    $ git push --tags
+
+Si es la primera vez que iremos a la rama stable-3_1_2 (fork):
     $ git checkout --track origin/stable-3_1_2
 
-Para fusionar los cambios del repositorio padre desde upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (bifurcación):
+Para fusionar los cambios del repositorio padre desde la rama upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (fork):
 
     $ git pull upstream stable-3_1_2
     $ git push
@@ -83,7 +90,7 @@ Para actualizar la librería pkp:
 
     $ cd lib/pkp
     $ git remote update
-    $ git fetch
+    $ git fetch'upstream
     $ git checkout stable-3_1_2
     $ git pull upstream stable-3_1_2
     $ git push
@@ -92,12 +99,13 @@ Para actualizar la librería ui-library:
 
     $ cd ../ui-library
     $ git remote update
-    $ git fetch
+    $ git fetch upstream
     $ git checkout stable-3_1_2
     $ git pull upstream stable-3_1_2
     $ git push
+    $ cd ../..
 
-Después de actualizar las librerías, los sincronizamos con OJS a su versión adecuada:
+Después de actualizar las librerías, los sincronizamos los submodulos con OJS a su versión adecuada:
 
     $ git submodule update --init --recursive
 
@@ -112,6 +120,14 @@ Si se debe actualizar la base de datos, en el archivo config.ing.php cambiar ins
     $ php tools/upgrade.php upgrade
 
 Luego volver a cambiar installed = Off a On.
+
+## Git Tags:
+
+Para crear un tag, nos vamos a la rama stable-3_1_2 del fork:
+
+    $ git checkout stable-3_1_2
+    $ git tag 'ojs-3_1_2-2_upch' -a
+    $ git push --tags
 
 ## Upgrade
 
