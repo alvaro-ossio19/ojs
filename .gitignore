@@ -3,11 +3,15 @@
 temp
 /files
 /plugins/paymethod/paypal/vendor/
+/plugins/paymethod/paypal/composer.lock
 .htaccess
 .project
 .buildpath
 .settings
 .DS_Store
+
+# npm
+package-lock.json
 
 # Dependency directories
 node_modules
