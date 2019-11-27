@@ -1,4 +1,6 @@
-# Open Journal Systems 3.1.2 (SIDISI)
+# Open Journal Systems 3.1.2 (SIDISI Revisión Académica)
+
+> Esta es una version personalizada de ui-library para SIDISI Revisión Académica. Asegurarse de trabajar en la rama stable-3_1_2-upch-rev-aca para esta versión, no confundir con stable-3_1_2 que es la rama original.
 
 > Open Journal Systems (OJS) has been developed by the Public Knowledge Project. For general information about OJS and other open research systems, visit the [PKP web site][pkp].
 
@@ -73,26 +75,34 @@ Vamos a la rama master:
     $ git checkout master
     $ git remote update
     $ git fetch upstream
+    $ git fetch
 
 Si se trajeron nuevos tags desde upstream, debemos subirlo a nuestro fork:
 
     $ git push --tags
 
-Si es la primera vez que iremos a la rama stable-3_1_2 (fork):
-    $ git checkout --track origin/stable-3_1_2
+Si es la primera vez que iremos a las ramas stable-3_1_2 y stable-3_1_2-upch-rev-aca del fork:
 
-Para fusionar los cambios del repositorio padre desde la rama upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (fork):
+    $ git checkout --track origin/stable-3_1_2
+    $ git checkout --track origin/stable-3_1_2-upch-rev-aca
+
+Fusionar los cambios del repositorio padre desde la rama upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (fork):
 
     $ git pull upstream stable-3_1_2
+
+Luego llevamos los cambios a la rama de esta version:
+
+    $ git pull origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
 
 Para actualizar la librería pkp:
 
     $ cd lib/pkp
     $ git remote update
-    $ git fetch'upstream
-    $ git checkout stable-3_1_2
+    $ git fetch upstream
+    $ git checkout stable-3_1_2-upch-rev-aca
     $ git pull upstream stable-3_1_2
+    $ git pull origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
 
 Para actualizar la librería ui-library:
@@ -100,12 +110,20 @@ Para actualizar la librería ui-library:
     $ cd ../ui-library
     $ git remote update
     $ git fetch upstream
-    $ git checkout stable-3_1_2
+    $ git checkout stable-3_1_2-upch-rev-aca
     $ git pull upstream stable-3_1_2
+    $ git origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
     $ cd ../..
 
-Después de actualizar las librerías, los sincronizamos los submodulos con OJS a su versión adecuada:
+Después de actualizar las librerías, actualizamos los heads de cada repositorio submodulos en la raiz de OJS:
+
+    $ git add lib/pkp
+    $ git add lib/ui-library
+    $ git commit -m 'sync lib/pkp y lib/u-ilibrary'
+    $ git push
+
+Sincronizamos los submodulos con OJS a su versión adecuada (segun heads de cada repositorio):
 
     $ git submodule update --init --recursive
 
@@ -123,10 +141,10 @@ Luego volver a cambiar installed = Off a On.
 
 ## Git Tags:
 
-Para crear un tag, nos vamos a la rama stable-3_1_2 del fork:
+Para crear un tag, nos vamos a la rama stable-3_1_2-upch-rev-aca del fork:
 
-    $ git checkout stable-3_1_2
-    $ git tag 'ojs-3_1_2-2_upch' -a
+    $ git checkout stable-3_1_2-upch-rev-aca
+    $ git tag 'ojs-3_1_2-2_upch-rev-aca' -a
     $ git push --tags
 
 ## Upgrade
