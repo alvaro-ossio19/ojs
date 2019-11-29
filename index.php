@@ -6,7 +6,7 @@
 define('UPCH_ROOT', dirname(__FILE__));
 define('UPCH_SETTING_AUTH_ID_DEFAULT', 0);
 define('UPCH_SETTING_AUTH_ID_LDAP', 1);
-define('UPCH_DISABLED_BY_SIDISI_MESSAGE', 'Método no permitido por SIDISI.');
+define('UPCH_STATUS_ARCHIVED', 0); // estado de submission archivado
 //
 // [/UPCH]
 
