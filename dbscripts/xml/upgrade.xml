@@ -11,7 +11,7 @@
   *
   -->
 
-<install version="3.1.2.2">
+<install version="3.1.2.3">
 	<code function="checkPhpVersion" />
 
 	<upgrade minversion="2.0.0.0" maxversion="2.3.9.9">
@@ -227,10 +227,6 @@
 		<data file="dbscripts/xml/upgrade/3.1.2_update.xml" />
 		<data file="dbscripts/xml/upgrade/3.2.0_navigation_menu_items_locale_change.xml" />
 		<note file="docs/release-notes/README-3.1.2" />
-	</upgrade>
-
-	<upgrade minversion="2.4.0.0" maxversion="3.1.1.9">
-		<code function="installEmailTemplate" key="STATISTICS_REPORT_NOTIFICATION" locales="en_US" />
 	</upgrade>
 
 	<!-- update plugin configuration - should be done as the final upgrade task -->
