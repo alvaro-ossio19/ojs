@@ -50,12 +50,12 @@
 	-->
 
 	<!-- Common Messages -->
-	<message key="common.openJournalSystems">Open Journal Systems</message>
+	<!--[UPCH]--><message key="common.openJournalSystems">SIDISI Revisión Académica</message>
 	<message key="common.confirmComplete">¿Está seguro/a de que desea marcar esta tarea como completa? No podrá realizar cambios después.</message>
 	<message key="common.payment">Pago</message>
 	<message key="common.payments">Pagos</message>
 	<message key="common.homePageHeader.altText">Encabezado de la página inicial</message>
-	<message key="common.journalHomepageImage.altText">Imagen de la página inicial de la revista</message>
+	<!--[UPCH]--><message key="common.journalHomepageImage.altText">Imagen de la página inicial de la Unidad</message>
 
 	<!-- Common Form Messages -->
 
@@ -66,9 +66,9 @@
 	<!-- Common Error Messages -->
 
 	<!-- Navigation -->
-	<message key="navigation.journalHelp">Servicio de ayuda de la revista</message>
+	<!--[UPCH]--><message key="navigation.journalHelp">Servicio de ayuda de la Unidad</message>
 	<message key="navigation.current">Actual</message>
-	<message key="navigation.otherJournals">Otras revistas</message>
+	<!--[UPCH]--><message key="navigation.otherJournals">Otras unidades</message>
 	<message key="navigation.browseByIssue">Por número</message>
 	<message key="navigation.browseByAuthor">Por autor/a</message>
 	<message key="navigation.infoForAuthors">Para autores/as</message>
@@ -100,7 +100,7 @@
 
 	<!-- Common Section Terms -->
 	<message key="section.section">Sección</message>
-	<message key="section.sections">Secciones de la revista</message>
+	<!--[UPCH]--><message key="section.sections">Secciones de la Unidad</message>
 	<message key="section.title">Título de sección</message>
 	<message key="section.abbreviation">Abreviatura</message>
 	<message key="section.abbreviation.example">(Por ejemplo, artículos=ART)</message>
@@ -113,7 +113,7 @@
 	<message key="article.authors">Autores/as</message>
 	<message key="article.indexingInformation">Información de indexación</message>
 	<message key="article.metadata">Metadatos</message>
-	<message key="article.journalSection">Sección de la revista</message>
+	<!--[UPCH]--><message key="article.journalSection">Sección de la Unidad</message>
 	<message key="article.file">Archivo</message>
 	<message key="article.suppFile">Archivo complementario</message>
 	<message key="article.suppFiles">Archivo(s) complementario(s)</message>
@@ -187,19 +187,19 @@
 
 	<!-- Common Journal Terms -->
 	<message key="journal.currentIssue">Número actual</message>
-	<message key="journal.journals">Revistas</message>
+	<!--[UPCH]--><message key="journal.journals">Unidades</message>
 	<message key="journal.path">Ruta</message>
-	<message key="context.context">Revista</message>
+	<!--[UPCH]--><message key="context.context">Unidad</message>
 	<message key="journal.issn">ISSN</message>
 
 	<!-- User -->
 	<message key="user.profile.profileImage">Imagen de perfil</message>
-	<message key="user.showAllJournals">Mostrar Mis revistas</message>
+	<!--[UPCH]--><message key="user.showAllJournals">Mostrar Mis unidades</message>
 	<message key="user.registerForOtherJournals">Registrarse en Otras revistas</message>
-	<message key="user.myJournals">Mis revistas</message>
+	<!--[UPCH]--><message key="user.myJournals">Mis unidades</message>
 	<message key="user.manageMySubscriptions">Gestionar mis suscripciones</message>
-	<message key="user.noRoles.chooseJournal">En este momento su cuenta no está asociada a ninguna revista. Elija un revista:</message>
-	<message key="user.noRoles.noRolesForJournal">En este momento su cuenta no tiene asignado ningún rol para esta revista. Elija entre las siguientes acciones:</message>
+	<!--[UPCH]--><message key="user.noRoles.chooseJournal">En este momento su cuenta no está asociada a ninguna Unidad. Elija una unidad:</message>
+	<!--[UPCH]--><message key="user.noRoles.noRolesForJournal">En este momento su cuenta no tiene asignado ningún rol para esta Unidad. Elija entre las siguientes acciones:</message>
 	<message key="user.noRoles.submitArticle">Envíe una propuesta</message>
 	<message key="user.noRoles.submitArticleRegClosed">Envíe un artículo: En este momento el registro de autores/as se encuentra deshabilitado.</message>
 	<message key="user.noRoles.regReviewer">Registrarse como revisor/a</message>
@@ -303,7 +303,7 @@
 
 	<!-- Reader article view -->
 	<message key="reader.subscribersOnly">Sólo suscriptores</message>
-	<message key="reader.subscriptionRequiredLoginText">Es necesario estar suscrito para acceder a este elemento. Acceda a la revista con sus datos de usuario para verificar la suscripción.</message>
+	<!--[UPCH]--><message key="reader.subscriptionRequiredLoginText">Es necesario estar suscrito para acceder a este elemento. Acceda a la Unidad con sus datos de usuario para verificar la suscripción.</message>
 	<message key="reader.openAccess">Acceso abierto</message>
 	<message key="reader.subscriptionAccess">Acceso mediante suscripción</message>
 	<message key="reader.subscriptionOrFeeAccess">Suscripción o acceso de pago</message>
@@ -351,11 +351,11 @@
 	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems es compatible con el sistema <a href="http://lockss.org/" target="_blank">LOCKSS</a> (Lots of Copies Keep Stuff Safe) que garantiza a la revista un archivo permanente y seguro. LOCKSS es un programa de código abierto desarrollado por la Biblioteca de la Universidad de Stanford y que permite a las bibliotecas conservar revistas web seleccionadas buscando regularmente en revistas registradas para recopilar el nuevo contenido publicado y archivarlo. Cada archivo es validado continuamente con registros de otras bibliotecas, así que cualquier contenido dañado o perdido se puede restaurar utilizando esos registros o la misma revista. <br /><br /> No es necesario instalar LOCKSS para Open Journal Systems hasta que no se haya puesto en marcha la publicación; una vez llegados a ese punto, se deberán seguir dos pasos:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Avisos de derechos de autor propuestos por Creative Commons</h3> <h4>1. Política propuesta para revistas que ofrecen acceso abierto</h4> Aquellos autores/as que tengan publicaciones con esta revista, aceptan los términos siguientes: <ol type="a"> <li>Los autores/as conservarán sus derechos de autor y garantizarán a la revista el derecho de primera publicación de su obra, el cuál estará simultáneamente sujeto a la <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento de Creative Commons</a> que permite a terceros compartir la obra siempre que se indique su autor y su primera publicación esta revista.</li> <li>Los autores/as podrán adoptar otros acuerdos de licencia no exclusiva de distribución de la versión de la obra publicada (p. ej.: depositarla en un archivo telemático institucional o publicarla en un volumen monográfico) siempre que se indique la publicación inicial en esta revista.</li> <li>Se permite y recomienda a los autores/as difundir su obra a través de Internet (p. ej.: en archivos telemáticos institucionales o en su página web) antes y durante el proceso de envío, lo cual puede producir intercambios interesantes y aumentar las citas de la obra publicada. (Véase <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">El efecto del acceso abierto</a>).</li> </ol> <h4>2. Política propuesta para revistas que ofrecen acceso abierto diferido</h4> Aquellos autores/as que tengan publicaciones con esta revista, aceptan los términos siguientes: <ol type="a"> <li>Los autores/as conservarán sus derechos de autor y garantizarán a la revista el derecho de primera publicación de su obra [ESPECIFICAR PERIODO DE TIEMPO], el cuál estará simultáneamente sujeto a la <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento de Creative Commons</a> que permite a terceros compartir la obra siempre que se indique su autor y su primera publicación esta revista.</li> <li>Los autores/as podrán adoptar otros acuerdos de licencia no exclusiva de distribución de la versión de la obra publicada (p. ej.: depositarla en un archivo telemático institucional o publicarla en un volumen monográfico) siempre que se indique la publicación inicial en esta revista.</li> <li>Se permite y recomienda a los autores/as difundir su obra a través de Internet (p. ej.: en archivos telemáticos institucionales o en su página web) antes y durante el proceso de envío, lo cual puede producir intercambios interesantes y aumentar las citas de la obra publicada. (Véase <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">El efecto del acceso abierto</a>).</li> </ol>]]></message>
+	<!--[UPCH]--><message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Avisos de derechos de autor propuestos por Creative Commons</h3> <h4>1. Política propuesta para revistas que ofrecen acceso abierto</h4> Aquellos autores/as que tengan publicaciones con esta Unidad, aceptan los términos siguientes: <ol type="a"> <li>Los autores/as conservarán sus derechos de autor y garantizarán a la Unidad el derecho de primera publicación de su obra, el cuál estará simultáneamente sujeto a la <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento de Creative Commons</a> que permite a terceros compartir la obra siempre que se indique su autor y su primera publicación en esta Unidad.</li> <li>Los autores/as podrán adoptar otros acuerdos de licencia no exclusiva de distribución de la versión de la obra publicada (p. ej.: depositarla en un archivo telemático institucional o publicarla en un volumen monográfico) siempre que se indique la publicación inicial en esta Unidad.</li> <li>Se permite y recomienda a los autores/as difundir su obra a través de Internet (p. ej.: en archivos telemáticos institucionales o en su página web) antes y durante el proceso de envío, lo cual puede producir intercambios interesantes y aumentar las citas de la obra publicada. (Véase <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">El efecto del acceso abierto</a>).</li> </ol> <h4>2. Política propuesta para revistas que ofrecen acceso abierto diferido</h4> Aquellos autores/as que tengan publicaciones con esta Unidad, aceptan los términos siguientes: <ol type="a"> <li>Los autores/as conservarán sus derechos de autor y garantizarán a la Unidad el derecho de primera publicación de su obra [ESPECIFICAR PERIODO DE TIEMPO], el cuál estará simultáneamente sujeto a la <a target="_new" href="http://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento de Creative Commons</a> que permite a terceros compartir la obra siempre que se indique su autor y su primera publicación en esta Unidad.</li> <li>Los autores/as podrán adoptar otros acuerdos de licencia no exclusiva de distribución de la versión de la obra publicada (p. ej.: depositarla en un archivo telemático institucional o publicarla en un volumen monográfico) siempre que se indique la publicación inicial en esta Unidad.</li> <li>Se permite y recomienda a los autores/as difundir su obra a través de Internet (p. ej.: en archivos telemáticos institucionales o en su página web) antes y durante el proceso de envío, lo cual puede producir intercambios interesantes y aumentar las citas de la obra publicada. (Véase <a target="_new" href="http://opcit.eprints.org/oacitation-biblio.html">El efecto del acceso abierto</a>).</li> </ol>]]></message>
 
 	<!-- Setup Step 4 -->
 	<message key="manager.setup.basicEditorialStepsDescription"><![CDATA[Pasos: Cola de envío &gt; revisión de envíos &gt; edición de envíos &gt; tabla de contenidos.<br /><br /> Seleccione un modelo para gestionar esos aspectos del proceso editorial. (Para designar un gestor/a de edición y editores/as de sección, vaya a "Editores" en "Gestión de la revista».)]]></message>
-	<message key="manager.setup.referenceLinkingDescription"><![CDATA[<p>Para permitir que los lectores/as encuentren en línea versiones de una obra citada por un autor/a, las siguientes opciones están disponibles:</p> <ol> <li><strong> Añadir herramienta de lectura</strong><p>El gestor/a de la revista puede añadir a esta herramienta de lectura (disponible para elementos publicados) la opción "Buscar referencias", que permitirá a los lectores/as pegar el título de una referencia y buscarlo en las bases de datos académicas preseleccionadas.</p></li> <li><strong>Enlaces incorporados en Referencias</strong><p>El maquetador/a puede añadir un enlace a las referencias que se encuentren online, siguiendo las instrucciones editables detalladas a continuación.</p></li> </ol>]]></message>
+	<!--[UPCH]--><message key="manager.setup.referenceLinkingDescription"><![CDATA[<p>Para permitir que los lectores/as encuentren en línea versiones de una obra citada por un autor/a, las siguientes opciones están disponibles:</p> <ol> <li><strong> Añadir herramienta de lectura</strong><p>El gestor/a de la revista puede añadir a esta herramienta de lectura (disponible para elementos publicados) la opción "Buscar referencias", que permitirá a los lectores/as pegar el título de una referencia y buscarlo en las bases de datos académicas preseleccionadas.</p></li> <li><strong>Enlaces incorporados en Referencias</strong><p>El maquetador/a puede añadir un enlace a las referencias que se encuentren online, siguiendo las instrucciones editables detalladas a continuación.</p></li> </ol>]]></message>
 
 	<!-- Setup Step 5 -->
 
@@ -370,7 +370,7 @@
 
 	<!-- People Management -->
 	<message key="manager.people.confirmDisable">¿Deshabilitar esta cuenta de usuario/a? Esta acción no permitirá al usuario/a iniciar sesión en el sistema. De forma opcional, puede indicar el motivo por el cual se ha deshabilitado la cuenta de usuario/a.</message>
-	<message key="manager.people.noAdministrativeRights"><![CDATA[No tiene derechos administrativos sobre este usuario/a. Esto puede ser debido a que: <ul> <li>El usuario/a es un administrador/a del sitio</li> <li>El usuario/a está activo en revistas que usted no gestiona</li> </ul> Esta tarea debe gestionarla un administrador/a del sitio.
+	<!--[UPCH]--><message key="manager.people.noAdministrativeRights"><![CDATA[No tiene derechos administrativos sobre este usuario/a. Esto puede ser debido a que: <ul> <li>El usuario/a es un administrador/a del sitio</li> <li>El usuario/a está activo en unidades que usted no gestiona</li> </ul> Esta tarea debe gestionarla un administrador/a del sitio.
 	]]></message>
 
 
@@ -473,7 +473,7 @@
 	<message key="reviewer.article.reviewSchedule">Planificación de revisión</message>
 	<message key="reviewer.article.reviewSteps">Pasos de revisión</message>
 	<message key="reviewer.article.reviewerGuidelines">Directrices para el revisor/a</message>
-	<message key="reviewer.article.reviewGuidelinesDescription"><![CDATA[Las directrices para el revisor/a proporcionarán a los revisores/as el criterio necesario para juzgar si un envío es adecuado para ser publicado en la revista, y puede incluir cualquier tipo de instrucciones particulares para preparar una revisión efectiva y útil. Al realizar la revisión, los revisores/as disponen de dos cuadros de texto abiertos: el primero "para el autor/a y el editor/a" y el segundo "para el editor/a". El gestor/a de la revista también puede crear un formulario de revisión por pares en el apartado Formularios de revisión. En cualquier caso, los editores/as tendrán la opción de incluir las revisiones para el autor/a.]]></message>
+	<!--[UPCH]--><message key="reviewer.article.reviewGuidelinesDescription"><![CDATA[Las directrices para el revisor/a proporcionarán a los revisores/as el criterio necesario para juzgar si un envío es adecuado para ser desarrollado en la Unidad, y puede incluir cualquier tipo de instrucciones particulares para preparar una revisión efectiva y útil. Al realizar la revisión, los revisores/as disponen de dos cuadros de texto abiertos: el primero "para el autor/a y el editor/a" y el segundo "para el editor/a". El gestor/a de la revista también puede crear un formulario de revisión por pares en el apartado Formularios de revisión. En cualquier caso, los editores/as tendrán la opción de incluir las revisiones para el autor/a.]]></message>
 	<message key="reviewer.article.notifyEditorA">Notificar al editor/a del envío</message>
 	<message key="reviewer.article.notifyEditorB">de si aceptará o no la revisión.</message>
 	<message key="reviewer.article.consultGuidelines">Si va a revisar, consulte las directrices para el revisor que aparecen a continuación.</message>
@@ -503,8 +503,8 @@
 	<!-- Article Submission Step 2 -->
 
 	<!-- Article Submission Step 3 -->
-	<message key="author.submit.uploadInstructions"><![CDATA[
-<p>Para cargar un manuscrito en esta revista, complete los siguientes pasos:</p> <ol> <li>Haga clic en Examinar (o Seleccionar archivo) en esta página para abrir la ventana Seleccionar archivo y así poder localizarlo en su disco duro.</li> <li>Localice el archivo que desea enviar y resáltelo.</li> <li>Haga clic en Abrir (en la ventana Seleccionar archivo) y verá el nombre del archivo en esta página.</li> <li>Haga clic en Cargar para enviar el archivo al sitio web de la revista y renombrarlo según las normas de la revista.</li> <li>Una vez cargado el envío, haga clic en Guardar y continuar, en la parte inferior de esta página.</li> </ol>]]></message>
+	<!--[UPCH]--><message key="author.submit.uploadInstructions"><![CDATA[
+<p>Para cargar un manuscrito en esta Unidad, complete los siguientes pasos:</p> <ol> <li>Haga clic en Examinar (o Seleccionar archivo) en esta página para abrir la ventana Seleccionar archivo y así poder localizarlo en su disco duro.</li> <li>Localice el archivo que desea enviar y resáltelo.</li> <li>Haga clic en Abrir (en la ventana Seleccionar archivo) y verá el nombre del archivo en esta página.</li> <li>Haga clic en Cargar para enviar el archivo al sitio web de la Unidad y renombrarlo según sus normas.</li> <li>Una vez cargado el envío, haga clic en Guardar y continuar, en la parte inferior de esta página.</li> </ol>]]></message>
 
 	<!-- Article Submission Step 4 -->
 
@@ -629,7 +629,7 @@
 	<message key="search.browseAuthorIndex">Examinar índice de autores/as</message>
 	<message key="search.searchFor">Buscar artículos por</message>
 	<message key="search.withinJournal">Dentro de</message>
-	<message key="search.allJournals">Todas las revistas</message>
+	<!--[UPCH]--><message key="search.allJournals">Todas las unidades</message>
 	<message key="search.authorIndex">Examinar índice de autores/as</message>
 	<message key="search.authorDetails">Detalles de autor/a</message>
 	<message key="search.syntaxInstructions"><![CDATA[<h4>Consejos de búsqueda: </h4><ul> <li>Los términos de búsqueda no distinguen entre mayúsculas y minúsculas</li> <li>Las palabras comunes serán ignoradas</li> <li>Por defecto, sólo aquellos artículos que contengan<em>todos</em> los términos en consulta, serán devueltos (p. ej.: <em>Y</em> está implícito)</li> <li>Combine múltiples palabras con<em>O</em> para encontrar artículos que contengan cualquier término; p. ej., <em>educación O investigación</em></li> <li>Utilice paréntesis para crear consultas más complejas; p. ej., <em>archivo ((revista O conferencia) NO tesis)</em></li> <li>Busque frases exactas introduciendo comillas; p.ej, <em>"publicaciones de acceso abierto"</em></li> <li>Excluya una palabra poniendo como prefijo <strong>-</strong> o <em>NO</em>; p. ej. <em>-política en línea</em> o <em>NO política en línea</em></li> <li>Utilice <strong>*</strong> en un término como comodín para que cualquier secuencia de caracteres concuerde; p. ej., <em>soci* moralidad</em> hará que aparezcan aquellos documentos que contienen "sociológico" o "social"</li> </ul>]]></message>
@@ -643,16 +643,16 @@
 	<message key="article.nonpdf.note"><![CDATA[El archivo seleccionado se empezará a descargar automáticamente. Si no es así, haga clic en el siguiente enlace. Tenga en cuenta que para poder ver este archivo puede necesitar un visor especial o un módulo.<br /><br />Si el archivo no se descarga automáticamente, <a href="{$url}">haga clic aquí</a>.]]></message>
 
 	<!-- Site index -->
-	<message key="site.journalsHosted">Revistas alojadas en este sitio</message>
-	<message key="site.journalView">Ver revista</message>
+	<!--[UPCH]--><message key="site.journalsHosted">Unidades alojadas en este sitio</message>
+	<!--[UPCH]--><message key="site.journalView">Ver Unidad</message>
 	<message key="site.journalRegister">Registrarse</message>
 	<message key="site.journalCurrent">Número actual</message>
-	<message key="site.noJournals">No hay revistas disponibles.</message>
+	<!--[UPCH]--><message key="site.noJournals">No hay unidades disponibles.</message>
 
 	<!-- Current index -->
 	<message key="current.current">Actual</message>
 	<message key="current.noCurrentIssue">Ningún número actual</message>
-	<message key="current.noCurrentIssueDesc">Esta revista no ha publicado ningún número.</message>
+	<!--[UPCH]--><message key="current.noCurrentIssueDesc">Esta Unidad no ha publicado ningún número.</message>
 
 	<!-- Archive index -->
 	<message key="archive.archives">Archivos</message>
@@ -661,7 +661,7 @@
 
 	<!-- About The Journal -->
 	<message key="about.statistics">Estadísticas</message>
-	<message key="about.history">Historial de la revista</message>
+	<!--[UPCH]--><message key="about.history">Historial de la Unidad</message>
 	<message key="about.editorialTeam">Equipo editorial</message>
 	<message key="about.editorialTeam.biography">Resumen biográfico</message>
 	<message key="about.editorialPolicies">Políticas de la editorial</message>
@@ -827,7 +827,7 @@
 	<message key="rt.admin.options">Herramientas para artículos de la revista</message>
 	<message key="rt.admin.relatedItems">Herramientas de artículos relacionados</message>
 
-	<message key="rt.admin.settings.addComment">Añadir comentario (permite que los lectores/as envíen comentarios que puede eliminar el gestor/a de la revista).</message>
+	<!--[UPCH]--><message key="rt.admin.settings.addComment">Añadir comentario (permite que los lectores/as envíen comentarios que puede eliminar el gestor/a de la revista).</message>
 	<message key="rt.admin.settings.addComment.authenticated">Los usuarios/as deben estar registrados/as y haber iniciado sesión para publicar un mensaje; no existe la posibilidad de hacerlo anónimamente.</message>
 	<message key="rt.admin.settings.addComment.anonymous">Los usuarios/as deben estar registrados/as y haber iniciado sesión para publicar un mensaje con posibilidad de hacerlo anónimamente.</message>
 	<message key="rt.admin.settings.addComment.unauthenticated">Los usuarios/as no tienen que estar registrados/as para publicar ya que se permite hacerlo anónimamente.</message>
@@ -847,7 +847,7 @@
 
 	<message key="rt.beNotifiedWhen">Notificarme cuando...</message>
 
-	<message key="rt.thisJournal">Buscar revista</message>
+	<!--[UPCH]--><message key="rt.thisJournal">Buscar Unidad</message>
 
 	<message key="rt.context.authorTermsDescription">Para artículos con mas de un autor/a, deje todos los nombres seleccionados para buscar por trabajos similares de co-autor/a o busque uno a la vez seleccionando un sólo nombre. Para obtener más información sobre el recurso que busca, haga clic en ACERCA DE. Estos recursos han sido seleccionados por su relevancia y por su acceso abierto (gratuito) a todo o parte de su contenido.</message>
 
@@ -881,15 +881,15 @@
 
 	<!-- Debug messages -->
 	<message key="debug.notes.currencyListLoad">Lista de monedas “{$filename}” cargada de XML</message>
-	<message key="context.current">Revista actual:</message>
-	<message key="context.select">Cambiar a otra revista:</message>
+	<!--[UPCH]--><message key="context.current">Unidad actual:</message>
+	<!--[UPCH]--><message key="context.select">Cambiar a otra unidad:</message>
 	<message key="article.return">Volver a los detalles del artículo</message>
-	<message key="user.noRoles.selectUsersWithoutRoles">Incluir usuarios de esta revista sin roles</message>
-	<message key="user.reviewerPrompt">¿Estaría dispuesto a revisar envíos para esta revista?</message>
+	<!--[UPCH]--><message key="user.noRoles.selectUsersWithoutRoles">Incluir usuarios de esta unidad sin roles</message>
+	<!--[UPCH]--><message key="user.reviewerPrompt">¿Estaría dispuesto a revisar envíos para esta Unidad?</message>
 	<message key="user.reviewerPrompt.userGroup">Sí, solicitar el rol {$userGroup}.</message>
 	<message key="user.register.contextsPrompt">¿En qué revistas de este sitio le gustaría registrarse?</message>
 	<message key="user.register.otherContextRoles">Solicitar los siguientes roles.</message>
-	<message key="user.register.noContextReviewerInterests">Si ha solicitado ser revisor/a en alguna revista introduzca sus temas de interés, por favor.</message>
+	<!--[UPCH]--><message key="user.register.noContextReviewerInterests">Si ha solicitado ser revisor/a en alguna Unidad introduzca sus temas de interés, por favor.</message>
 	<message key="user.role.subEditors">Editores/as de sección</message>
 	<message key="user.role.journalAssistant">Asistente/a de revista</message>
 	<message key="user.role.journalAssistants">Asistentes/as de revista</message>
@@ -900,7 +900,7 @@
 	<message key="search.results.orderBy.author">Autor/a</message>
 	<message key="search.results.orderBy.date">Fecha de publicación</message>
 	<message key="search.results.orderBy.issue">Número</message>
-	<message key="search.results.orderBy.journal">Título de la revista</message>
+	<!--[UPCH]--><message key="search.results.orderBy.journal">Título de la Unidad</message>
 	<message key="search.results.orderBy.popularityAll">Popularidad (histórico)</message>
 	<message key="search.results.orderBy.popularityMonth">Popularidad (último mes)</message>
 	<message key="search.results.orderBy.relevance">Relevancia</message>
@@ -921,7 +921,7 @@ La configuración del soporte CLOCKSS para Open Journal Systems no hace falta qu
 	<message key="article.pluginMissing"><![CDATA[<p>El archivo PDF que ha seleccionado debería cargarse aquí si su navegador tiene instalado un módulo de lectura de PDF  (por ejemplo, una versión reciente de <a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a>).</p>]]></message>
 	<message key="archive.archivesPageNumber">Archivos - Página {$pageNumber}</message>
 	<message key="about.contact">Contacto</message>
-	<message key="about.aboutContext">Sobre la revista</message>
+	<!--[UPCH]--><message key="about.aboutContext">Sobre la Unidad</message>
 	<message key="about.onlineSubmissions.register">Registrar</message>
 	<message key="help.goToEditPage">Editar {$sectionTitle}</message>
 	<message key="installer.preInstallationInstructions"><![CDATA[<h4>Pasos para la preinstalación</h4>

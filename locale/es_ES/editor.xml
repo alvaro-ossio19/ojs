@@ -36,8 +36,8 @@
 	<message key="editor.notifyUsers.allInstitutionalSubscribers">Todos los suscriptores/as institucionales ({$count} usuarios/as)</message>
 	<message key="editor.notifyUsers.inProgress">Se está informando a los usuarios/as...</message>
 	<message key="editor.usersNotified">Usuarios/as informados</message>
-	<message key="editor.notifyUsers.allUsers">Enviar este mensaje a todos los usuarios/as asociados con esta revista ({$count} usuarios/as)</message>
-	<message key="editor.notifyUsers.interestedUsers">Enviar este mensaje a los usuarios/as asociados con esta revista que hayan indicado que desean recibir actualizaciones ({$count} usuarios/as)</message>
+	<!--[UPCH]--><message key="editor.notifyUsers.allUsers">Enviar este mensaje a todos los usuarios/as asociados con esta Unidad ({$count} usuarios/as)</message>
+	<!--[UPCH]--><message key="editor.notifyUsers.interestedUsers">Enviar este mensaje a los usuarios/as asociados con esta Unidad que hayan indicado que desean recibir actualizaciones ({$count} usuarios/as)</message>
 	<message key="editor.notifyUsers.includeToc">Incluir la tabla de contenidos de este número:</message>
 	<message key="editor.editorAdministration">Administración del editor/a</message>
 	<message key="editor.issues.createIssue">Crear número</message>

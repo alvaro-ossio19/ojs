@@ -31,7 +31,7 @@
 	<message key="author.submit.supplementaryFiles">Cargar los archivos complementarios</message>
 	<message key="author.submit.confirmation">Confirmación</message>
 	<message key="submission.submit.cancelSubmission">Puede completar este envío en otro momento seleccionando Envíos activos desde la página de inicio del autor/a.</message>
-	<message key="author.submit.notAccepting">La revista no acepta envíos en este momento.</message>
+	<!--[UPCH]--><message key="author.submit.notAccepting">{$contextName} no acepta envíos en este momento.</message>
 	<message key="author.submit.requestWaiver">Solicitud de exención de cuotas</message>
 	<message key="author.submit.qualifyForWaiver">Considere la posibilidad de exención de la cuota de envío para este artículo.</message>
 	<message key="author.submit.addReasonsForWaiver">Deje un comentario en la casilla que encontrará a continuación para indicar por qué no se deberían aplicar las cuotas.</message>
@@ -47,18 +47,18 @@
 	<message key="author.submissions.noSubmissions">Sin envíos.</message>
 	<message key="author.submit.howToSubmit"><![CDATA[¿Necesita ayuda? Póngase en contacto con <a href="mailto:{$supportEmail}">{$supportName}</a> para recibir asistencia ({$supportPhone}).]]></message>
 	<message key="author.submit.howToSubmitNoPhone"><![CDATA[¿Necesita ayuda? Póngase en contacto con <a href="mailto:{$supportEmail}">{$supportName}</a> para recibir asistencia.]]></message>
-	<message key="author.submit.journalSection">Sección de la revista</message>
-	<message key="author.submit.journalSectionDescription"><![CDATA[Seleccione la sección adecuada para el envío (ver Secciones y Política en <a href="{$aboutUrl}" target="_new">Acerca de</a> la revista).]]></message>
+	<!--[UPCH]--><message key="author.submit.journalSection">Sección de la Unidad</message>
+	<!--[UPCH]--><message key="author.submit.journalSectionDescription"><![CDATA[Seleccione la sección adecuada para el envío (ver Secciones y Política en <a href="{$aboutUrl}" target="_new">Acerca de</a> la Unidad).]]></message>
 	<message key="submission.submit.selectSection">Seleccione una sección...</message>
 	<message key="author.submit.submissionChecklist">Lista de comprobación del envío</message>
 	<message key="author.submit.verifyChecklist">Antes de continuar, debe asegurarse de que se cumplen todos los requisitos de la lista de comprobación.</message>
-	<message key="author.submit.copyrightNoticeAgree">Los autores/as se comprometen a aceptar las condiciones de este aviso de derechos de autor/a, que se aplicarán a este envío siempre y cuando se publique en esta revista (más abajo se pueden añadir comentarios al editor/a).</message>
+	<!--[UPCH]--><message key="author.submit.copyrightNoticeAgree">Los autores/as se comprometen a aceptar las condiciones de este aviso de derechos de autor/a, que se aplicarán a este envío siempre y cuando se publique en esta Unidad (más abajo se pueden añadir comentarios al editor/a).</message>
 	<message key="author.submit.copyrightNoticeAgreeRequired">Debe aceptar las condiciones del aviso de derechos de autor/a antes de continuar.</message>
 	<message key="submission.submit.coverNote">Comentarios para el editor/a</message>
 	<message key="author.submit.comments">Introduzca texto (opcional)</message>
-	<message key="author.submit.form.sectionRequired">Seleccione la sección adecuada de la revista para este envío.</message>
+	<!--[UPCH]--><message key="author.submit.form.sectionRequired">Seleccione la sección adecuada de la Unidad para este envío.</message>
 	<message key="author.submit.form.localeRequired">Seleccione el idioma del envío.</message>
-	<message key="submission.submit.privacyStatement">Declaración de privacidad de la revista</message>
+	<!--[UPCH]--><message key="submission.submit.privacyStatement">Declaración de privacidad de la Unidad</message>
 	<message key="author.submit.reorderInstructions">Reordenar a los autores/as para que aparezcan en el orden en el que serán enumerados en la publicación.</message>
 	<message key="author.submit.reorder">Reordenar el nombre del autor/a</message>
 	<message key="author.submit.selectPrincipalContact">Contacto principal para la correspondencia editorial.</message>
@@ -109,7 +109,7 @@
 	<message key="author.submit.suppFile.form.descriptionRequired">Introduzca una descripción.</message>
 	<message key="author.suppFile.suppFilePublicIdentificationExists">La identificación pública del archivo complementario ya existe.</message>
 	<message key="author.suppFile.publicSuppFileIdentifier">Identificador público del archivo complementario</message>
-	<message key="author.submit.confirmationDescription">Para enviar su manuscrito a {$journalTitle} haga clic en Finalizar envío. El contacto principal del envío recibirá un acuse de recibo por correo electrónico y podrá ver el progreso del envío a través del proceso editorial iniciando sesión en el sitio web de la revista. Gracias por su publicación en {$journalTitle}.</message>
+	<!--[UPCH]--><message key="author.submit.confirmationDescription">Para enviar su manuscrito a {$journalTitle} haga clic en Finalizar envío. El contacto principal del envío recibirá un acuse de recibo por correo electrónico y podrá ver el progreso del envío a través del proceso editorial iniciando sesión en el sitio web de la Unidad. Gracias por su publicación en {$journalTitle}.</message>
 	<message key="author.submit.noFiles">No se han adjuntado archivos a este envío.</message>
 	<message key="author.submit.filesSummary">Resumen del archivo</message>
 	<message key="author.submit.finishSubmission">Finalizar envío</message>
@@ -117,6 +117,6 @@
 	<message key="author.article.uploadAuthorVersion">Cargar la versión del autor/a</message>
 	<message key="author.article.copyeditedFile">Archivo corregido</message>
 	<message key="author.article.authorRevisedFile">Archivo del autor/a</message>
-	<message key="author.submit.authorSubmitLoginMessage">Es necesario disponer de una cuenta de usuario/a para realizar envíos a la revista. Esto permite que nuestros editores/as hagan un seguimiento de sus envíos y puedan contactarle cuando cambie el estado de los mismos o si es necesario proporcionar información adicional.</message>
+	<!--[UPCH]--><message key="author.submit.authorSubmitLoginMessage">Es necesario disponer de una cuenta de usuario/a para realizar envíos a la Unidad. Esto permite que nuestros editores/as hagan un seguimiento de sus envíos y puedan contactarle cuando cambie el estado de los mismos o si es necesario proporcionar información adicional.</message>
 	<message key="author.submit.nextSteps">Siguientes pasos</message>
 </locale>
