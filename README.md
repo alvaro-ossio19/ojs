@@ -14,8 +14,9 @@ You will find detailed guides in [docs](docs) folder.
 
 Checkout submodules and copy default configuration :
 
-    git submodule update --init --recursive
-    cp config.TEMPLATE.inc.php config.inc.php
+    $ git checkout stable-3_1_2-upch-rev-aca
+    $ git submodule update --init --recursive
+    $ cp config.TEMPLATE.inc.php config.inc.php
 
 Install or update dependencies via Composer (https://getcomposer.org/):
 
@@ -37,9 +38,7 @@ See [Wiki][wiki-dev] for more complete development guide.
 
 ## PKP dev
 
-Documentación de desarrollo:
-
-    https://docs.pkp.sfu.ca/dev/documentation/en/getting-started
+Documentación de desarrollo: [PKP Docs Dev](https://docs.pkp.sfu.ca/dev/documentation/en/getting-started)
 
 ## Git Repository Fork: Vincular proyecto con repositorio padre
 
@@ -70,54 +69,52 @@ Hacemos lo mismo para las librerías pkp y ui-library:
 
 ## Git Repository Fork: Sincronizar actualizaciones del repositorio padre
 
-Vamos a la rama master:
+Sincronizamos los repositorios remotos:
 
-    $ git checkout master
     $ git remote update
-    $ git fetch upstream
-    $ git fetch
 
 Si se trajeron nuevos tags desde upstream, debemos subirlo a nuestro fork:
 
     $ git push --tags
 
-Si es la primera vez que iremos a las ramas stable-3_1_2 y stable-3_1_2-upch-rev-aca del fork:
+Si es la primera vez que iremos a la rama stable-3_1_2-upch-rev-aca del fork:
 
-    $ git checkout --track origin/stable-3_1_2
     $ git checkout --track origin/stable-3_1_2-upch-rev-aca
 
-Fusionar los cambios del repositorio padre desde la rama upstream/stable-3_1_2 con la rama origin/stable-3_1_2 (fork):
+Fusionar los cambios del repositorio padre desde la rama upstream/stable-3_1_2 con la rama origin/stable-3_1_2-upch-rev-aca (fork):
 
+    $ git checkout stable-3_1_2-upch-rev-aca
     $ git pull upstream stable-3_1_2
-
-Luego llevamos los cambios a la rama de esta version:
-
-    $ git pull origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
 
 Para actualizar la librería pkp:
 
     $ cd lib/pkp
-    $ git remote update
     $ git fetch upstream
+    $ git push --tags
     $ git checkout stable-3_1_2-upch-rev-aca
     $ git pull upstream stable-3_1_2
-    $ git pull origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
 
 Para actualizar la librería ui-library:
 
     $ cd ../ui-library
-    $ git remote update
     $ git fetch upstream
+    $ git push --tags
     $ git checkout stable-3_1_2-upch-rev-aca
     $ git pull upstream stable-3_1_2
-    $ git origin/stable-3_1_2 origin/stable-3_1_2-upch-rev-aca
     $ git push
     $ cd ../..
 
-Después de actualizar las librerías, actualizamos los heads de cada repositorio submodulos en la raiz de OJS:
+Actualizamos las dependencias y compilamos la aplicación JavaScript en la raiz de OJS:
 
+    $ composer --working-dir=lib/pkp update
+    $ npm install
+    $ npm run build
+
+Después de actualizar las librerías, actualizamos los heads de cada submodulo en la raiz de OJS:
+
+    $ git add .
     $ git add lib/pkp
     $ git add lib/ui-library
     $ git commit -m 'sync lib/pkp y lib/u-ilibrary'
@@ -126,12 +123,6 @@ Después de actualizar las librerías, actualizamos los heads de cada repositori
 Sincronizamos los submodulos con OJS a su versión adecuada (segun heads de cada repositorio):
 
     $ git submodule update --init --recursive
-
-Actualizamos las dependencias y compilamos la aplicación JavaScript:
-
-    $ composer --working-dir=lib/pkp update
-    $ npm install
-    $ npm run build
 
 Si se debe actualizar la base de datos, en el archivo config.ing.php cambiar installed = On a Off y ejecutar:
 
@@ -147,11 +138,17 @@ Para crear un tag, nos vamos a la rama stable-3_1_2-upch-rev-aca del fork:
     $ git tag 'ojs-3_1_2-2_upch-rev-aca' -a
     $ git push --tags
 
-## Upgrade
+## Sincronizar tags con upstream
 
-Para actualizar la aplicacion OJS desde una base de datos existente:
+Cuando salen nuevas versiones de lib/pkp se crean nuevos tags en el repositorio padre. Para sincronizarlos con el fork:
 
-    https://pkp.sfu.ca/ojs/UPGRADE
+    $ git fetch upstream
+    $ git push
+    $ git push --tags
+
+## OJS Upgrade
+
+Para actualizar la aplicacion OJS usando una base de datos existente, junto con sus carpetas de archivos: [PKP Application Upgrade](https://pkp.sfu.ca/ojs/UPGRADE)
 
 ## OJS: Revisión Académica
 
