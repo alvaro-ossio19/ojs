@@ -1,6 +1,6 @@
 # Open Journal Systems 3.1.2 (SIDISI Revisión Académica)
 
-> Esta es una version personalizada de ui-library para SIDISI Revisión Académica. Asegurarse de trabajar en la rama stable-3_1_2-upch-rev-aca para esta versión, no confundir con stable-3_1_2 que es la rama original.
+> Esta es una version personalizada de OJS 3.1.2 para SIDISI Revisión Académica. Asegurarse de trabajar en la rama stable-3_1_2-upch-rev-aca para esta versión, no confundir con stable-3_1_2 que es la rama original de PKP.
 
 > Open Journal Systems (OJS) has been developed by the Public Knowledge Project. For general information about OJS and other open research systems, visit the [PKP web site][pkp].
 
