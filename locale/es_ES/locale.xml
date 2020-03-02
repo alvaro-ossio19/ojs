@@ -462,11 +462,11 @@
 	<message key="reviewer.article.schedule.response">Su respuesta</message>
 	<message key="reviewer.article.schedule.submitted">Revisión enviada</message>
 	<message key="reviewer.article.schedule.due">Fecha de entrega de revisión</message>
-	<message key="reviewer.article.decision.accept">Aceptar este envío</message>
-	<message key="reviewer.article.decision.pendingRevisions">Publicable con modificaciones</message>
-	<message key="reviewer.article.decision.resubmitHere">Reenviar para revisión</message>
+	<!--[UPCH]--><message key="reviewer.article.decision.accept">Es aceptable en el formato actual</message><!--Aceptar este envío-->
+	<!--[UPCH]--><message key="reviewer.article.decision.pendingRevisions">Requiere cambios menores</message><!--Publicable con modificaciones-->
+	<!--[UPCH]--><message key="reviewer.article.decision.resubmitHere">Requiere cambios sustanciales</message><!--Reenviar para revisión-->
 	<message key="reviewer.article.decision.resubmitElsewhere">Reenviar a otra publicación</message>
-	<message key="reviewer.article.decision.decline">No publicable</message>
+	<!--[UPCH]--><message key="reviewer.article.decision.decline">Rechazar</message><!--No publicable-->
 	<message key="reviewer.article.decision.seeComments">Ver comentarios</message>
 	<message key="reviewer.article.schedule">Planificación</message>
 	<message key="reviewer.article.submissionToBeReviewed">Envío para revisar</message>
