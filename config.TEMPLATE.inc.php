@@ -506,3 +506,14 @@ deprecation_warnings = Off
 
 ; Log web service request information for debugging
 log_web_service_info = Off
+
+
+;;;;;;;;;;;;;;;;;;
+; UPCH Settings ;
+;;;;;;;;;;;;;;;;;;
+
+[upch]
+
+; Environment production mode
+; Por defecto estara desactivado
+production_mode = Off
