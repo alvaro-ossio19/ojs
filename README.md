@@ -63,9 +63,9 @@ Volvemos a verificar los repositorios remotos:
 Hacemos lo mismo para las librerías pkp y ui-library:
 
     $ cd lib/pkp
-    $ git remote add upstream git@github.com:pkp/pkp-lib.git
+    $ git remote add upstream https://github.com/pkp/pkp-lib
     $ cd ../ui-library
-    $ git remote add upstream git@github.com:pkp/ui-library.git
+    $ git remote add upstream https://github.com/pkp/ui-library
 
 ## Git Repository Fork: Sincronizar actualizaciones del repositorio padre
 
